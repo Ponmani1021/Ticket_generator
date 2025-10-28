@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color-white: #FFFAFA;
+    --text-color-gray:	#808080;
+    --primary-color: #FF7F50;
+    --hover-color:rgba(255,255,255,0.1);
+    --bg-gray:rgba(128, 128, 128, 0.15);
+}
+body{
+    width: auto;
+    min-height: 100vh;
+    background-image: url(./images/background-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color-gray);
+    overflow: scroll;
+}
+
+/* Main page */
+
+.maintext{
+    color: var(--text-color-white);
+}
+.subtext{
+    color: var(--text-color-gray);
+}
+
+/* Upload button */
+.upload-box {
+    width: 100%;         /* full width of column (same as input) */
+    max-width: 100%; 
+    background-color: var(--bg-gray); /* light gray with opacity */
+    border: 2px dashed var(--text-color-gray);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#fileInput {
+    display: none;
+}
+#defaultIcon{
+    border: 2px solid var(--text-color-gray);
+    border-radius: 15px;
+}
+#defaultIcon:hover{
+    transform: scale(1.04);
+}
+.upload-box:hover{
+    border: 2px dashed var(--primary-color);
+}
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.form-control{
+    background: transparent;
+    background-color: var(--bg-gray);
+    color: var(--text-color-white) !important;
+}
+.gbtn{
+    background-color: var(--primary-color);
+    letter-spacing: 1px;
+}
+.gbtn:hover{
+    border: 2px solid var(--primary-color);
+    letter-spacing: 2px;
+}
+input {
+    color: var(--text-color-white);
+}
+.form-label{
+    font-size: 1rem;
+    color: var(--text-color-white);
+}
+/* Ticket */
+.ticket_textbox{
+    top: 20px;
+    left: 30px;
+}
+#paradate{
+    color: var(--text-color-gray);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.profile-pic2{
+    min-width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+@media screen and (max-width:570px){
+    .profile-pic2{
+        width: 70px;
+        height: 80px;
+        margin-top: 0;
+    }
+    #logoimg{
+        width: 150px;
+    }
+    #ticketNumber{
+        right: -50%;
+    }
+}
+#ticketNumber{
+    position: absolute;
+    right: -70%;
+    top: 0;
+    line-height: 1.3;
+}
+input:focus {
+    background-color:transparent !important; 
+    border-bottom:4px solid var(--primary-color) !important; 
+    box-shadow: none !important; 
+}

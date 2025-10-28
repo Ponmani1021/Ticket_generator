@@ -1,5 +1,4 @@
-// Generating ticket 
-
+// Generating Ticket
 const uploadContainer = document.getElementById('uploadContainer');
 const fileInput = document.getElementById('fileInput');
 const preview = document.getElementById('preview');
